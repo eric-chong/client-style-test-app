@@ -1,0 +1,1 @@
+export { getStyledProperty } from "./getStyledProperty";

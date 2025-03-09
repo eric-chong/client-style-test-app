@@ -1,0 +1,17 @@
+.page {
+  padding: 32px;
+  max-width: 800;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  /* pre {
+    background-color: #fff;
+    color: #888;
+    padding: 16px;
+    min-height: 50px;
+    width: 100%;
+  } */
+}

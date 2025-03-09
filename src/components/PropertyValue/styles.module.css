@@ -1,0 +1,9 @@
+.propertyValue {
+  pre {
+    background-color: #fff;
+    color: #888;
+    padding: 16px;
+    min-height: 50px;
+    width: 100%;
+  }
+}
