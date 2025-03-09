@@ -1,23 +1,18 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import { getStyledProperty } from "@/utils/getStyledProperty";
-import { PropertyValue } from "../PropertyValue";
+import { PropertyValue } from "@/components/PropertyValue";
+import { ClientWrapper } from "@/components/ClientWrapper";
 
 export const ClientPropertyValue = ({
   propertyKey,
 }: {
   propertyKey: string;
 }) => {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
-
   const propertyValue = getStyledProperty(propertyKey);
-  return <PropertyValue propertyValue={propertyValue} />;
+  return (
+    <ClientWrapper>
+      <PropertyValue propertyValue={propertyValue} />
+    </ClientWrapper>
+  );
 };

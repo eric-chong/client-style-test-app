@@ -1,4 +1,3 @@
-import { getStyledProperty } from "@/utils/getStyledProperty";
 import { ClientPropertyValue } from "@/components/ClientPropertyValue";
 import styles from "./page.module.css";
 
